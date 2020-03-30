@@ -78,23 +78,31 @@
 .content{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   justify-content: center;
+  
   margin: 1em 2em;
   border-bottom: 5px dotted #ff4ca5;
   padding-bottom: 30px; /* 内容と線との間隔量 */
  }
 }
 .content h1{
-  text-align: center;
+  text-style: none;
 }
 .content span{
-  padding-top: 10px;
+  padding: 10px 5px 0 0;
 }
+
 .content img{
   margin: 1.5em auto;
 }
-
+.shareicon{
+  display: block;
+  padding: 1em 0 0 0;
+}
+.shareicon i{
+  font-size: 1.5em;
+}
 .contact{
     background-color: blue;
 }

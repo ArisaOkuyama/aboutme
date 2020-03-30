@@ -7,6 +7,8 @@
     <script src="https://kit.fontawesome.com/5f631bac22.js"></script>
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css"> 
+    <link rel="stylesheet" href="style4.css">
 </head>
 
 <body>
@@ -16,14 +18,14 @@
             <label for="toggle-tab1">
                 <i id="bar" class="fas fa-bars fa-lg" style="color: red;"></i>
             </label>
-                <ul class="toggle-menu1">
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#aboutme">ABOUT ME</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#works">WORKS</a></li>
-                    <li><a href="#blogpage">BLOG</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
+            <ul class="toggle-menu1">
+                <li><a href="#home"><span>HOME</span></a></li>
+                <li><a href="#aboutme"><span>ABOUT ME</span></a></li>
+                <li><a href="#skills"><span>SKILLS</span></a></li>
+                <li><a href="#works"><span>WORKS</span></a></li>
+                <li><a href="#blogpage"><span>BLOG</span></a></li>
+                <li><a href="#contact"><span>CONTACT</span></a></li>
+            </ul>
         </nav>
     </header>
     <div class="title box" id="home">
@@ -44,7 +46,7 @@
             <div class="photo">
                 <img src="squerephoto.jpg" alt="myphoto">
                 <div class="name">
-                    <span>Arisa Okuyama<br><br>奥山　有彩</span>
+                    <p>Arisa Okuyama<br>奥山　有彩</p>
                 </div>
             </div>    
             <div class="background">
@@ -73,19 +75,55 @@
             </div>
         </div>
     </div>
-    <div id="skills" class="box my-skill">
-        <div class="skills">
-            <div class="section">
-                <h1>SKILLS</h1>
+    <div id="skills" class="my-skill">
+        <div class="section">
+            <h1>SKILLS</h1>
+        </div>
+        <div class="wrapper">
+            <div class="html skilllogo">
+                <i class="fab fa-html5 fa-5x"></i>
+                <h3>HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Nemo soluta aspernatur unde exercitationem autem quo.</p>
+            </div>
+            <div class="css skilllogo">
+                <i class="fab fa-css3-alt fa-5x"></i>
+                <h3>CSS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Nemo soluta aspernatur unde exercitationem autem quo.</p>
+            </div>
+            <div class="ruby skilllogo">
+                <img src="./Ruby_logo.png" alt="rubylogo"><br>
+                <h3>RUBY</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                     Nemo soluta aspernatur unde exercitationem autem quo.</p>
+            </div>
+            <div class="rubyandrails skilllogo">
+                <img src="./Ruby_logo.png" alt="rubylogo"><br>
+                <h3>RUBY&rails</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    Nemo soluta aspernatur unde exercitationem autem quo.</p>
             </div>
         </div>
-        <div class="icons">
-            <i class="fab fa-html5 fa-10x"></i>
-            <i class="fab fa-css3-alt fa-10x"></i>
-        </div>
     </div>
-    <div id="works" class="box my-work">
-        <h1>Here is my work</h1>
+    <div id="works" class="my-work">
+        <div class="projecttitle">
+            <h1>PROJECT</h1>
+        </div>
+        <div class="wrapper">
+            <ul id="project1">
+                <li  class="videotitle">Project 1</li>
+                <li class="video">
+                    <img src="./DSC_1518.jpeg" alt="">
+                </li>
+            </ul>
+            <ul id="project1">
+                <li  class="videotitle">Project 2</li>
+                <li class="video">
+                    <img src="./DSC_1518.jpeg" alt="" width: 500px;>
+                </li>
+            </ul>
+        </div>
     </div>
     <div id="blogpage" class="box blog">
         <h1>Here is blog</h1>

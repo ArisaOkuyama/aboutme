@@ -6,8 +6,9 @@ scroll-behavior: smooth;
 
 body {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 1fr auto 1fr 1fr 1fr 1fr 0.2fr;
+    grid-template-columns: auto;
+    grid-template-rows: 0.1fr 1fr auto auto auto 1fr 1fr 0.2fr;
+    position: absolute;
 }
 header {
     background-color:#ffffa3;
@@ -27,14 +28,15 @@ input[type="checkbox"] {
   .toggle-menu1 > li {
     display: block;
   }
-
-ul > li {
+  .toggle-menu1 a{
+    text-decoration: none;
+ }
+nav ul > li {
     display: none;
     width: 100%;
     padding: 10px;
     text-align: center;
     background-color: white;
-    text-decoration: none;
   }
 label {
     display: flex;
@@ -46,11 +48,9 @@ label {
     background-color: #ffc6c6;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-
 }
 .box {
-    width: 100vw;
+    /* width: 100vw; */
     height: 100vh;
 }
 /* top page styling */
@@ -59,11 +59,13 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    /* align-content: center; */
     height: 100%;
 }
 .title{
     background-color:#ff9393;
 }
+
 .title .introduce h1{
     padding: 0;
     color: black;
@@ -71,8 +73,32 @@ label {
     text-align: center;
     font-size: 3em;
  }
+
 .title .introduce h3{
+    /* position: relative;
+    top: 50%;   */
+    width: 21em;
+    margin: 0 auto;
+    /* border-right: 2px solid rgba(255,255,255,.75); */
+    font-size: 180%;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    animation: typewriter 4s steps(25) 1 normal both,
+    blinkTextCursor 0.5s steps(25) infinite normal;
+}
+ 
+/* @-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } } */
+
+@keyframes typewriter{/*タイプライターライクなアニメーション*/
+  from{width: 0;}
+  to{width: 12em;}
+}
+@keyframes blinkTextCursor{/*点滅するカーソルのアニメーション*/
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
 .title .introduce p{
     color: red;

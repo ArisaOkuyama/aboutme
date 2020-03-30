@@ -1,0 +1,52 @@
+/* skill page */
+
+.my-work{
+    background-color: red;
+    padding:2em;
+}
+#works h1{
+    font-size: 2em;
+    padding: 1em;
+    text-align: center;
+}
+#works .wrapper{
+    background-color: #adff2f;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 2em;
+}
+#project1{
+    background-color: hotpink;
+    flex: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+}
+#project1 .videotitle{
+    flex:1;
+    background-color: darkred;
+}
+#project1 .video{
+    flex:4;
+    background-color: darksalmon;
+}
+.video img{
+    width: 500px;
+}
+#project1 li { 
+display: block;
+padding: 10px;
+text-align: center;
+text-decoration: none;
+font-size: 1em;
+background-color: #ffc6c6;
+}
+
+.blog{
+    background-color: yellow;
+}
+
+.contact{
+    background-color: blue;
+}

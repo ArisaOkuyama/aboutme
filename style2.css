@@ -13,51 +13,84 @@
 }
 .aboutmetitle{
     flex: 1;
+    font-size: 1.5em;
 }
 .section{
-    padding: 2em;
+    padding: 1em;
     text-align: center;
 }
 .photo{
     flex: 4;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     /* width: 100%; */
     align-items: center;
 }
 .photo img{
-    width: 30%;
+    width: 50%;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid white;
     /* flex: 1; */
     background: red;
+    margin: 1em;
 }
-.photo .name {
+.name{
+    font-size: 1.5em;
+    margin: 1em;
+}
+.photo{
     text-align: center;
-    width: 35%;
-    font-size: 4.5vw;
+    font-size: 3.5vw;
 }
 .background, .background2{
     font-size: 1.5em;
     flex: 5;
-    margin: 2em 2em;
+    margin: 1em 2em;
 }
+/* skill page */
 
 .my-skill{
     background-color: #d7c447;
   }
-.my-work{
-    background-color: red;
+
+#skills{
+    position: relative;
+    padding: 1em 0;
+}
+#skills .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#skills .skilllogo{
+    background-color: darkturquoise;
+    padding: 1em;
+    height: 700px;
+    text-align: center;
+    flex: 0.5;
+    padding: 1em;
+    margin: 1em 5em;
 }
 
-.log{
-    background-color: yellow;
+#skills .section{
+    flex: 0.25;
+}
+#skills .ruby img, .rubyandrails img{
+    width: 5em;
+    height: 5em;
+}
+#skills p{
+    margin-top: 1em; 
+    padding: 1em;
 }
 
-.contact{
-    background-color: blue;
+#skills .html{
+    background-color: darkslateblue;
+    border: 5px solid white;
 }
 
 

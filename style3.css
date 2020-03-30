@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    }
+    
+    body {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: #ffa3a3;
+        /* grid-template-columns: auto;
+        grid-template-rows: 2fr auto 1fr; */
+        /* position: absolute; */
+        /* height: 100vh; */
+        /* position: relative; */
+    }
+    header {
+        background-color:#ffffa3;
+    }
+    nav{
+       background-color: #ffc6c6;
+       height: 100%;
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+        /* align-items: center; */
+    }
+    input[type="checkbox"] {
+        display: none;
+      }
+    #toggle-tab1:checked ~ 
+      .toggle-menu1 > li {
+        display: block;
+      }
+      .toggle-menu1 a{
+        text-decoration: none;
+     }
+    nav ul > li {
+        display: none;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+      }
+    label {
+        display: flex;
+        flex-wrap: wrap;
+        width: 10%;
+        padding: 10px;
+        height: 100%;
+        text-align: center;
+        background-color: #ffc6c6;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+.blog{
+    background-color: yellow;
+}
+
+.category{
+  height: 3em;
+  background-color: darkturquoise;
+  height: 100%;
+}
+.bloglist{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  margin: 1em;
+  /* flex-direction: column; */
+}
+.bloglist li{
+  list-style: none;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  justify-content: center;
+  margin: 1em 2em;
+  border-bottom: 5px dotted #ff4ca5;
+  padding-bottom: 30px; /* 内容と線との間隔量 */
+ }
+}
+.content h1{
+  text-align: center;
+}
+.content span{
+  padding-top: 10px;
+}
+.content img{
+  margin: 1.5em auto;
+}
+
+.contact{
+    background-color: blue;
+}
+#contact{
+    box-sizing: border-box;
+  }
+  
+  #contact input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* resize: vertical; */
+  }
+  
+  #contact label {
+    /* padding: 12px 12px 12px 0; */
+    display: inline-block;
+    padding:0;
+  }
+  
+  #contact  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* float: right; */
+  }
+  
+  #contact input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  #contact .container {
+    border-radius: 5px;
+    background-color: orange;
+    padding: 20px;
+  }
+  
+  #contact .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  #contact .col-75 {
+    /* float: left; */
+    width: 50%;
+    margin-top: 10px;
+  }
+  
+  /* Clear floats after the columns */
+  #contact .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+footer{
+    width: 100%;
+    background-color: #89c7de;
+    color: #fff;
+    text-align: center;
+    /* padding: 30px 0; */
+    /* position: absolute;
+    bottom: 0; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

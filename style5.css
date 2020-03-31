@@ -46,17 +46,24 @@
         border: 2px solid black;
         align-items: center;
         justify-content: center;
-        /* margin: 1em; */
-        /* height: 100%; */
+        position: relative;
+        z-index: 1;
     }
     .toggle-menu1 span{
         color: #e85298;
+        
     }
     .toggle-menu1 {
         display: flex;
     }
     .toggle-menu1 a{
         text-decoration: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
     }
     #backhome label {
         display: none;
@@ -198,15 +205,21 @@
         border: 2px solid black;
         align-items: center;
         justify-content: center;
-        /* margin: 1em; */
-        /* height: 100%; */
+        position: relative;
+        z-index: 1;
     }
     .toggle-menu1 span{
-    color: #e85298;
+        color: #e85298;
     
      }
     .toggle-menu1 a{
-    text-decoration: none;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
     }
     #backhome label {
     display: none;

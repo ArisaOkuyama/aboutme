@@ -1,69 +1,69 @@
 *{
-    padding: 0;
-    margin: 0;
-    scroll-behavior: smooth;
-    }
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
     
-    body {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        background-color: #ffa3a3;
-        /* grid-template-columns: auto;
-        grid-template-rows: 2fr auto 1fr; */
-        /* position: absolute; */
-        /* height: 100vh; */
-        /* position: relative; */
-    }
-    header {
-        background-color:#ffffa3;
-    }
-    nav{
-       background-color: #ffc6c6;
-       height: 100%;
-       display: flex;
-       flex-direction: column;
-       justify-content: flex-start;
-        /* align-items: center; */
-    }
-    input[type="checkbox"] {
-        display: none;
-      }
-    #toggle-tab1:checked ~ 
-      .toggle-menu1 > li {
-        display: block;
-      }
-      .toggle-menu1 a{
-        text-decoration: none;
-     }
-    nav ul > li {
-        display: none;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        background-color: white;
-        position: relative;
-        z-index: 1;
-    }
-    nav ul > li > a {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 2;
+body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: #ffa3a3;
+    /* grid-template-columns: auto;
+    grid-template-rows: 2fr auto 1fr; */
+    /* position: absolute; */
+    /* height: 100vh; */
+    /* position: relative; */
+}
+header {
+    background-color:#ffffa3;
+}
+nav{
+    background-color: #ffc6c6;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+}
+input[type="checkbox"] {
+    display: none;
   }
-    label {
-        display: flex;
-        flex-wrap: wrap;
-        width: 10%;
-        padding: 10px;
-        height: 100%;
-        text-align: center;
-        background-color: #ffc6c6;
-        justify-content: center;
-        align-items: center;
-    }
+#toggle-tab1:checked ~ 
+  .toggle-menu1 > li {
+    display: block;
+  }
+  .toggle-menu1 a{
+    text-decoration: none;
+  }
+nav ul > li {
+    display: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+nav ul > li > a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+label {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10%;
+  padding: 10px;
+  height: 100%;
+  text-align: center;
+  background-color: #ffc6c6;
+  justify-content: center;
+  align-items: center;
+}
     
 
 .blog{

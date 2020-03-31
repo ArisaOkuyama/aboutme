@@ -206,3 +206,134 @@ text-decoration: none;
 font-size: 1em;
 background-color: #ffc6c6;
 }
+
+@media screen and (min-width: 1025px) { 
+
+    #skills .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr; */
+    }
+    #skills .skilllogo{
+        background-color: pink;
+        padding: 1em;
+        text-align: center;
+        padding: 4em;
+        height: auto;
+        padding: 1em;
+        margin: 2em;
+        /* width: 50%; */
+    }
+    .photo{
+        flex: 4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* width: 100%; */
+        align-items: center;
+    }
+    .photo img{
+        width: 30%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid white;
+        /* flex: 1; */
+        background: red;
+        margin: 1em;
+    }
+    
+    .profile{
+        height: 100vh;
+        padding: 40px;
+        display: grid;
+        grid-template-areas: 
+        "title title title title"
+        "photo bg1 bg1 bg1"
+        "photo bg1 bg1 bg1"
+        "photo bg2 bg2 bg2"
+        "photo bg2 bg2 bg2"
+        ;
+    }
+    .aboutmetitle{
+        grid-area: title;
+    }
+    .photo{
+        grid-area: photo;
+        display: flex;
+        flex-direction: column;
+    }
+    .photo img{
+        flex: 2;
+        width: 6em;
+    }
+    .photo .name{
+        flex: 1;
+        font-size: 1em;
+        margin: 1em;
+        }
+    }
+    .background{
+        grid-area: bg1;
+        font-size: 1.5em;
+    }
+    .background2 {
+        grid-area: bg2;
+        font-size: 1.5em;
+    }
+}
+
+.toggle-menu1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: flex-start;
+    /* width: 100%; */ 
+    /* position: fixed;
+    top: 0;  */
+    width: 100%;
+    /* height: 3em; */
+    /* position: absolute; */
+}
+
+/* #backhome ul > li {
+    display: flex;
+    padding: 1.5em;
+    text-decoration: none;
+    font-size: 1em;
+    background-color: #ffc6c6;
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+}
+.toggle-menu1 span{
+color: #e85298;
+
+ }
+.toggle-menu1 a{
+text-decoration: none;
+}
+#backhome label {
+display: none;
+flex-wrap: wrap;
+width: 10%;
+padding: 10px;
+height: 100%;
+text-align: center;
+background-color: #ffc6c6;
+justify-content: center;
+align-items: center;
+text-decoration: none;
+}
+
+#backhome{
+background-color: sienna;
+position: relative;
+}
+#works .wrapper{
+background-color: #adff2f;
+display: flex;
+flex-direction: row;
+height: 100%;
+margin: 2em;
+} */

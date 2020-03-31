@@ -1,67 +1,13 @@
-*{
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
-}
-  
 body {
-    background: -moz-linear-gradient(65deg, #F13F79, #FFC778); 
-    background: -webkit-linear-gradient(65deg, #F13F79, #FFC778); 
-    background: linear-gradient(25deg, #F13F79, #FFC778); 
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+  background: -moz-linear-gradient(65deg, #F13F79, #FFC778); 
+  background: -webkit-linear-gradient(65deg, #F13F79, #FFC778); 
+  background: linear-gradient(25deg, #F13F79, #FFC778); 
 }
 
-header {
-  background-color:#ffffa3;
-}
-nav{
-   background-color: #ffc6c6;
-   height: 100%;
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-    /* align-items: center; */
-}
-input[type="checkbox"] {
-    display: none;
-}
-#toggle-tab1:checked ~ 
-  .toggle-menu1 > li {
-    display: block;
-  }
-  .toggle-menu1 a{
-    text-decoration: none;
-}
-nav ul > li {
-    display: none;
-    /* width: 100%; */
-    padding: 10px;
-    text-align: center;
-    background-color: white;
-    position: relative;
-    z-index: 1;
-    margin: 20px 10px;
-}
-nav ul > li > a {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-}
 label {
-    display: flex;
-    flex-wrap: wrap;
     padding: 10px;
-    width: 15vw;
-    height: 100%;
-    background-color: #ffc6c6;
-    justify-content: center;
-    align-items: center;
     border-radius: 4px;
+    background-color: #ffc6c6;
 }
 
 .formheader{
@@ -94,7 +40,7 @@ input[type=text],input[type=email], textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    margin-top: 6px;
+    margin-top: 16px;
     margin-bottom: 16px;
     resize: vertical;
 }
@@ -139,29 +85,4 @@ input[type=submit]:hover {
 .socialicon ul > li {
   padding: 20px;
   list-style: none;
-}
-
-footer{
-  /* width: 100%; */
-  background-color: #89c7de;
-  color: #fff;
-  padding: 2em;
-  display: flex;
-  /* align-items: center; */
-  justify-content: space-between;
-}
-footer .footermenu{
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  /* background-color: turquoise; */
-}   
-footer .footermenu li {
-  padding: 5px;
-}
-
-footer p {
-  align-self: flex-end;
 }

@@ -51,7 +51,7 @@ label {
 }   
 
 .profile{
-    background-color: #019a66;
+    background: white;
 }
 .profile{
     padding: 5px;
@@ -102,7 +102,7 @@ label {
 /* skill page */
 
 .my-skill{
-    background-color: #d7c447;
+    background: white;
   }
 
 #skills{
@@ -116,13 +116,14 @@ label {
     align-items: center;
 }
 #skills .skilllogo{
-    background-color: darkturquoise;
+    background-color:;
     padding: 1em;
     height: 700px;
     text-align: center;
     flex: 0.5;
     padding: 1em;
     margin: 1em 5em;
+    border: 5px solid gray;
 }
 
 #skills .section{
@@ -138,15 +139,14 @@ label {
 }
 
 #skills .html{
-    background-color: darkslateblue;
-    border: 5px solid white;
+    /* border: 5px solid gray; */
 }
 
 
 /* skill page */
 
 .my-work{
-    background-color: red;
+    background-color: ;
     padding:2em;
 }
 #works h1{
@@ -155,7 +155,7 @@ label {
     text-align: center;
 }
 #works .wrapper{
-    background-color: #adff2f;
+    background-color: ;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -172,7 +172,7 @@ label {
 }
 #project1 .videotitle{
     flex:1;
-    background-color: darkred;
+    background-color: ;
 }
 #project1 .video{
     flex:4;
@@ -232,7 +232,6 @@ background-color: #ffc6c6;
         grid-template-rows: 1fr 1fr;
     }
     #skills .skilllogo{
-        background-color: pink;
         padding: 1em;
         text-align: center;
         padding: 4em;

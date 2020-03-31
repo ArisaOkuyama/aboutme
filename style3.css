@@ -84,13 +84,14 @@
   margin: 1em 2em;
   border-bottom: 5px dotted #ff4ca5;
   padding-bottom: 30px; /* 内容と線との間隔量 */
- }
 }
+
 .content h1{
-  text-style: none;
+  font-size: 6vw;
 }
 .content span{
   padding: 10px 5px 0 0;
+  font-size: 4vw;
 }
 
 .content img{
@@ -173,4 +174,43 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px){
+  .category{
+    margin-top : 2em;
+  }
+  .content p {
+    margin-right: 2em;
+    margin-left: 2em;
+    font-size: 4vw;
+  }
+  .content{
+    margin: 2em 4em;
+  }
+  
+}
+
+@media screen and (min-width: 1025px) {
+  .content p {
+    margin-right: 2em;
+    margin-left: 2em;
+    font-size: 2vw;
+  }
+  .category{
+    margin-top : 2em;
+  }
+  .bloglist li < span{
+    font-size: 3em;
+  }
+  .content{
+    margin: 2em 10em;
+  }
+  .content span{
+    font-size: 2vw;
+  }
+  .content h1{
+    font-size: 3vw;
+  }
+  
 }

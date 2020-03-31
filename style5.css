@@ -2,6 +2,16 @@
     body {
     padding-top: 40px;
     }
+    nav ul > li {
+        display: none;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        margin: 0;
+    }
     #skills .wrapper{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -114,6 +124,16 @@
         width: 100%;
         flex-direction: column;
         padding-top: 60px;
+    }
+    nav ul > li {
+        display: none;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        margin: 0;
     }
     #skills .wrapper{
         display: grid;

@@ -1,206 +1,129 @@
-/* ABOUT ME page */
-*{
-padding: 0;
-margin: 0;
-scroll-behavior: smooth;
-}
-
-body {
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    body {
     display: flex;
     width: 100%;
     flex-direction: column;
-    /* grid-template-columns: auto;
-    grid-template-rows: 2fr auto 1fr; */
-    /* position: absolute; */
-    /* height: 100vh; */
-    /* position: relative; */
-}
-header {
-    /* background-color:#ffffa3; */
-    background-color: #ffc6c6;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* align-items: center; */
-}
-input[type="checkbox"] {
-    display: none;
+    padding-top: 70px;
+    padding-top: 40px;
     }
-#toggle-tab1:checked ~ 
-    .toggle-menu1 > li {
-    display: block;
+    nav ul > li {
+        display: none;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        margin: 0;
     }
+    #skills .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    #skills .skilllogo{
+        background-color: pink;
+        padding: 1em;
+        text-align: center;
+        padding: 4em;
+        height: auto;
+        grid: 1;
+        padding: 1em;
+        margin: 2em;
+        /* width: 50%; */
+    }
+    .photo{
+        flex: 4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        /* width: 100%; */
+        align-items: center;
+    }
+    .photo img{
+        width: 30%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid white;
+        /* flex: 1; */
+        background: red;
+        margin: 1em;
+    }
+
+    .name{
+        font-size: 1.5em;
+        margin: 1em;
+    }
+    #backhome ul > li {
+        display: flex;
+        /* padding: 10px; */
+        /* width: 100%;
+        height: 100%; */
+        text-decoration: none;
+        font-size: 1em;
+        background-color: #ffc6c6;
+        border: 2px solid gray;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
+        margin: 0;
+    }
+    #backhome ul > li:hover {
+        background-color:#ff9393;
+    }
+    .toggle-menu1 span{
+        color: white;
+        /* font-size: 20px;?? */
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 0.3em;
+        /* padding : 3px; */
+        border-top:0;
+        border-bottom: 0;
+    }
+
+
     .toggle-menu1 a{
-    text-decoration: none;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
     }
-#backhome ul > li {
-    display: none;
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background-color: white;
+    #backhome label {
+        display: none;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 10%;
+        /* padding: 10px; */
+        height: 100%;
+        text-align: center;
+        background-color: #ffc6c6;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
     }
-#backhome label {
-    display: flex;
-    flex-wrap: wrap;
-    width: 10%;
-    padding: 10px;
-    height: 100%;
-    text-align: center;
-    background-color: #ffc6c6;
-    justify-content: center;
-    align-items: center;
-}
+    #backhome ul > li:hover {
+        background-color:#ff9393;
+    }
+    #backhome{
+        background-color: #ffc6c6;
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* align-items: center; */
+    }
     
-.profile{
-    background-color: #019a66;
-}
-.profile{
-    padding: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.aboutmetitle{
-    flex: 1;
-    font-size: 1em;
-}
-.section{
-    padding: 1em;
-    text-align: center;
-}
-.photo{
-    flex: 4;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    /* width: 100%; */
-    align-items: center;
-}
-.photo img{
-    width: 40%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid white;
-    /* flex: 1; */
-    background: red;
-    margin: 1em;
-}
-.name{
-    font-size: 1.5em;
-    margin: 1em;
-}
-.photo{
-    text-align: center;
-    font-size: 3.5vw;
-}
-.background, .background2{
-    font-size: 1em;
-    flex: 5;
-    margin: 1em 2em;
-}
-/* skill page */
+    footer .footermenu{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+    }   
 
-.my-skill{
-    background-color: #d7c447;
-  }
-
-#skills{
-    padding: 1em 0;
-}
-#skills .wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-#skills .skilllogo{
-    background-color: darkturquoise;
-    padding: 1em;
-    height: 700px;
-    text-align: center;
-    flex: 0.5;
-    padding: 1em;
-    margin: 1em 5em;
-}
-
-#skills .section{
-    flex: 0.25;
-}
-#skills .ruby img, .rubyandrails img{
-    width: 5em;
-    height: 5em;
-}
-#skills p{
-    margin-top: 1em; 
-    padding: 1em;
-}
-
-#skills .html{
-    background-color: darkslateblue;
-    border: 5px solid white;
-}
-
-footer{
-    /* width: 100%; */
-    background-color: #89c7de;
-    color: #fff;
-    padding: 2em;
-    text-align: center;
-    /* padding: 30px 0; */
-    /* position: absolute;
-    bottom: 0; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/* skill page */
-
-.my-work{
-    background-color: red;
-    padding:2em;
-}
-#works h1{
-    font-size: 2em;
-    padding: 1em;
-    text-align: center;
-}
-#works .wrapper{
-    background-color: #adff2f;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin: 2em;
-}
-#project1{
-    background-color: hotpink;
-    flex: 1;
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-}
-#project1 .videotitle{
-    flex:1;
-    background-color: darkred;
-}
-#project1 .video{
-    flex:4;
-    background-color: darksalmon;
-}
-.video img{
-    width: 10em;
-    height 15em;
-}
-#project1 li { 
-display: block;
-padding: 10px;
-text-align: center;
-text-decoration: none;
-font-size: 1em;
-background-color: #ffc6c6;
 }

@@ -10,6 +10,7 @@ body {
     grid-template-rows: 0.1fr auto 0.1fr;
     /* position: absolute; */
     height: 100vh;
+    
     /* position: relative; */
 }
 header {
@@ -23,6 +24,7 @@ nav{
     justify-content: flex-start;
     /* align-items: center; */
 }
+
 input[type="checkbox"] {
     display: none;
     }
@@ -35,11 +37,22 @@ input[type="checkbox"] {
     }
 nav ul > li {
     display: none;
-    width: 100%;
+    /* width: 100%; */
     padding: 10px;
     text-align: center;
     background-color: white;
-    }
+    position: relative;
+    z-index: 1;
+    margin: 20px 10px;
+}
+nav ul > li > a {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
 label {
     display: flex;
     flex-wrap: wrap;
@@ -134,118 +147,71 @@ footer{
 }
 
 @media screen and (min-width: 1025px) { 
-    body {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: 0.1fr auto 0.1fr;
-        /* position: absolute; */
-        height: 100vh;
-        /* position: relative; */
-    }
-    #skills .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        /* grid-template-columns: 1fr; */
-    }
-    #skills .skilllogo{
-        background-color: pink;
-        padding: 1em;
-        text-align: center;
-        padding: 4em;
-        height: auto;
-        padding: 1em;
-        margin: 2em;
-        /* width: 50%; */
-    }
-    .photo{
-        flex: 4;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        /* width: 100%; */
-        align-items: center;
-    }
-    .photo img{
-        width: 30%;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 2px solid white;
-        /* flex: 1; */
-        background: red;
-        margin: 1em;
-    }
     
-    .profile{
-        height: 100vh;
-        padding: 40px;
-        display: grid;
-        grid-template-areas: 
-        "title title title title"
-        "photo bg1 bg1 bg1"
-        "photo bg1 bg1 bg1"
-        "photo bg2 bg2 bg2"
-        "photo bg2 bg2 bg2";
-    }
-    .aboutmetitle{
-        grid-area: title;
-    }
-    .photo{
-        grid-area: photo;
-        display: flex;
-        flex-direction: column;
-    }
-    .photo img{
-        flex: 2;
-        width: 6em;
-    }
-    .photo .name{
-        flex: 1;
-        font-size: 1em;
-        margin: 1em;
-        }
-    .background{
-        grid-area: bg1;
-        font-size: 1.5em;
-    }
-    .background2 {
-        grid-area: bg2;
-        font-size: 1.5em;
-    }
     .toggle-menu1{
         display: flex;
         flex-direction: row;
-        height: 100%;
+        /* height: 100%; */
         justify-content: center;
-        /* align-items: center; */
         align-content: flex-start;
-        /* width: 100%; */ 
-        /* position: fixed;
-        top: 0;  */
-        width: 100%;
-        /* height: 3em; */
-        /* position: absolute; */
+        width: 100%; 
     }
 
     #backhome ul > li {
         display: flex;
-        /* height: 100%; */
-        padding: 1.5em;
+        padding: 1em;
         width: 100%;
         text-decoration: none;
-        font-size: 1em;
-        background-color: #ffc6c6;
-        border: 2px solid black;
+        font-size: 2vh;
+        background-color: #ffadad;
+        /* border-right: 2px solid #89c7de;
+        border-left: 2px solid #89c7de; */
+        /* border-radius: 10px; */
         align-items: center;
         justify-content: center;
-        /* margin: 1em; */
-        /* height: 100%; */
+        position: relative;
+        z-index: 1;
     }
-    .toggle-menu1 span{
-    color: #e85298;
+    #backhome ul > li:hover {
+        background-color:#ff9393;
+    }
+    #backhome ul > li:nth-child(1){
+        padding: 0;
+    }
+    .toggle-menu1 span {
+    color: #fff9f9;
+    font-size: 2.5vh;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.3em;
+    padding : 8px;
+    border-top:0;
+    border-bottom: 0;
+    }
     
+    .toggle-menu1 span:hover {
+        border-top: 2px solid;
+        border-bottom: 2px solid;
+        z-index: 2;
     }
     .toggle-menu1 a{
-    text-decoration: none;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    
+    nav ul > li {
+        display: none;
+        /* width: 100%; */
+        padding: 10px;
+        text-align: center;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        margin: 0;
     }
     #backhome label {
     display: none;
@@ -266,17 +232,5 @@ footer{
     display: flex;
     width: 100%;
     flex-direction: column;
-        /* grid-template-columns: auto;
-        grid-template-rows: 2fr auto 1fr; */
-        /* position: absolute; */
-        /* height: 100vh; */
-        /* position: relative; */
-    }
-    #works .wrapper{
-    background-color: #adff2f;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    margin: 2em;
     }
 }

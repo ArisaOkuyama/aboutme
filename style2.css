@@ -178,14 +178,15 @@ footer{
     flex-wrap: wrap;
     flex-direction: column;
     height: 100%;
-    margin: 2em;
+    /* margin-bottom: 2em; */
 }
 #project1{
     background-color: hotpink;
     flex: 1;
-    padding: 2em;
+    /* padding: 2em; */
     display: flex;
     flex-direction: column;
+    margin-bottom: 2em;
 }
 #project1 .videotitle{
     flex:1;
@@ -195,15 +196,36 @@ footer{
     flex:4;
     background-color: darksalmon;
 }
-.video img{
-    width: 10em;
-    height 15em;
+.video video{
+    height: 40vw;
 }
 #project1 li { 
 display: block;
 padding: 10px;
 text-align: center;
 text-decoration: none;
-font-size: 1em;
+font-size: 2vh;
 background-color: #ffc6c6;
+}
+#project1 span{
+    padding: 1em 2em;
+    background-color: tan;
+}
+.resume{
+    position: relative;
+    background-color: pink;
+    width: 90%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+.resume a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }

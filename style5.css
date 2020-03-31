@@ -80,6 +80,15 @@
         justify-content: flex-start;
         /* align-items: center; */
     }
+    
+    footer .footermenu{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        /* background-color: turquoise; */
+    }   
 
 }
 
@@ -223,4 +232,12 @@
     height: 100%;
     margin: 2em;
     }
+    footer .footermenu{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        /* background-color: turquoise; */
+    }   
 } 

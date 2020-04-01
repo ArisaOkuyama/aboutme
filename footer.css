@@ -20,6 +20,9 @@ footer .footermenu{
 footer .footermenu li {
     padding: 5px;
 }
+footer .footermenu li > a {
+    text-decoration:none;
+}
 
 footer p {
     align-self: flex-end;

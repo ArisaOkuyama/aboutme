@@ -139,7 +139,7 @@
     }
     
     .profile{
-        height: 100vh;
+        /* height: 100vh; */
         padding: 40px;
         display: grid;
         grid-template-areas: 

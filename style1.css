@@ -109,6 +109,7 @@ label {
 .icons i:hover {
     font-size: 4em;
     color: #00a0de;
+    transition:all .5s ease-in-out;
 }
 .fab{
     margin: 0 .5em;

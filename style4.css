@@ -1,17 +1,17 @@
 body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 0;
   background: -moz-linear-gradient(65deg, #F13F79, #FFC778); 
   background: -webkit-linear-gradient(65deg, #F13F79, #FFC778); 
   background: linear-gradient(25deg, #F13F79, #FFC778); 
 }
 
-label {
-    padding: 10px;
-    border-radius: 4px;
-    background-color: #ffc6c6;
-}
-
 .formheader{
   padding : 2em;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
 }
 h2{
   text-align: center;
@@ -86,3 +86,4 @@ input[type=submit]:hover {
   padding: 20px;
   list-style: none;
 }
+

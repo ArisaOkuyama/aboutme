@@ -1,54 +1,12 @@
+body {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0;
+}
 header {
     background-color:#ffffa3;
 }
-nav{
-    background-color: #ffc6c6;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* align-items: center; */
-}
-
-input[type="checkbox"] {
-    display: none;
-    }
-#toggle-tab1:checked ~ 
-    .toggle-menu1 > li {
-    display: block;
-    }
-    .toggle-menu1 a{
-    text-decoration: none;
-    }
-nav ul > li {
-    display: none;
-    /* width: 100%; */
-    padding: 10px;
-    text-align: center;
-    background-color: white;
-    position: relative;
-    z-index: 1;
-    margin: 20px 10px;
-}
-nav ul > li > a {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-}
-label {
-    display: flex;
-    flex-wrap: wrap;
-    width: 10%;
-    padding: 10px;
-    height: 100%;
-    text-align: center;
-    background-color: #ffc6c6;
-    justify-content: center;
-    align-items: center;
-}   
 
 .profile{
     background: white;
@@ -64,6 +22,8 @@ label {
 .aboutmetitle{
     flex: 1;
     font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 }
 .section{
     padding: 1em;
@@ -80,7 +40,7 @@ label {
 .photo img{
     width: 40%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
     border: 2px solid white;
     /* flex: 1; */
     background: red;
@@ -93,9 +53,13 @@ label {
 .photo{
     text-align: center;
     font-size: 3.5vw;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 }
 .background, .background2{
     font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
     flex: 5;
     margin: 1em 2em;
 }
@@ -116,18 +80,22 @@ label {
     align-items: center;
 }
 #skills .skilllogo{
-    background-color:;
+    background-color:#E3CFC3;
     padding: 1em;
     height: 700px;
     text-align: center;
     flex: 0.5;
     padding: 1em;
     margin: 1em 5em;
-    border: 5px solid gray;
+    border: 5px dotted #C8C2BE;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 }
 
 #skills .section{
     flex: 0.25;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 }
 #skills .ruby img, .rubyandrails img{
     width: 5em;
@@ -153,6 +121,8 @@ label {
     font-size: 2em;
     padding: 1em;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 }
 #works .wrapper{
     background-color: ;
@@ -162,6 +132,7 @@ label {
     height: 100%;
     /* margin-bottom: 2em; */
 }
+
 #project1{
     background-color: hotpink;
     flex: 1;
@@ -169,10 +140,14 @@ label {
     display: flex;
     flex-direction: column;
     margin-bottom: 2em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
 }
 #project1 .videotitle{
     flex:1;
     background-color: ;
+    font-size: 3vh;
+    padding: 1em;
 }
 #project1 .video{
     flex:4;
@@ -183,15 +158,16 @@ label {
 }
 #project1 li { 
 display: block;
-padding: 10px;
+padding: 2em;
 text-align: center;
 text-decoration: none;
 font-size: 2vh;
 background-color: #ffc6c6;
 }
 #project1 span{
-    padding: 1em 2em;
+    padding: 2em 4em;
     background-color: tan;
+    font-size: 2vh;
 }
 .resume{
     position: relative;
@@ -203,6 +179,9 @@ background-color: #ffc6c6;
     justify-content: center;
     align-items: center;
     margin: 1em;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    text-align: center;
 }
 .resume a{
     position: absolute;
@@ -210,131 +189,4 @@ background-color: #ffc6c6;
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-@media screen and (min-width: 480px) and (max-width: 1024px) {
-    body {
-    padding-top: 40px;
-    }
-    nav ul > li {
-        display: none;
-        width: 100%;
-        padding: 10px;
-        text-align: center;
-        background-color: white;
-        position: relative;
-        z-index: 1;
-       
-    }
-    #skills .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    #skills .skilllogo{
-        padding: 1em;
-        text-align: center;
-        padding: 4em;
-        height: auto;
-        grid: 1;
-        padding: 1em;
-        margin: 2em;
-        /* width: 50%; */
-    }
-    .photo{
-        flex: 4;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        /* width: 100%; */
-        align-items: center;
-    }
-    .photo img{
-        width: 30%;
-        object-fit: cover;
-        border-radius: 50%;
-        border: 2px solid white;
-        /* flex: 1; */
-        background: red;
-        margin: 1em;
-    }
-
-    .name{
-        font-size: 1.5em;
-        margin: 1em;
-    }
-    #backhome ul > li {
-        display: flex;
-        /* padding: 10px; */
-        width: 100%;
-        height: 100%;
-        text-decoration: none;
-        font-size: 1em;
-        background-color: #ffc6c6;
-        /* border: 2px solid gray; */
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        z-index: 1;
-        margin: 0;
-    }
-    #backhome ul > li:hover {
-        background-color:#7a1414;
-    }
-    .toggle-menu1 span{
-        color: white;
-        font-size: 20px;
-        font-family: 'Raleway', sans-serif;
-        letter-spacing: 0.3em;
-        /* padding : 3px; */
-        border-top:0;
-        border-bottom: 0;
-    }
-    .toggle-menu1 {
-        display: flex;
-        overflow: hidden;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .toggle-menu1 a{
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 2;
-    }
-    #backhome label {
-        display: none;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 10%;
-        /* padding: 10px; */
-        height: 100%;
-        text-align: center;
-        background-color: #ffc6c6;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-    }
-    #backhome{
-        background-color: #ffc6c6;
-        height: auto;
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        /* align-items: center; */
-    }
-    
-    footer .footermenu{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-end;
-    }   
-
 }

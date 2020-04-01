@@ -1,36 +1,31 @@
-/* Menu bar */
+/* Top Menu bar */
 *{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
 }
-body {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-}
 
-header {
-    background-color:#ffffa3;
-}
 nav{
     background-color: #ffc6c6;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
 }
+
+/* the menu icon bar is check, show the menu bar */
+
 input[type="checkbox"] {
     display: none;
-    }
+}
 #toggle-tab1:checked ~ 
     .toggle-menu1 > li {
     display: block;
     }
     .toggle-menu1 a{
     text-decoration: none;
-    }
+}
+
 nav ul > li {
     display: none;
     padding: 10px;
@@ -39,6 +34,8 @@ nav ul > li {
     position: relative;
     z-index: 1;
     margin: 20px 10px;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.3em;
 }
 nav ul > li > a {
     width: 100%;

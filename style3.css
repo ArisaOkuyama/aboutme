@@ -1,4 +1,12 @@
- .blog{
+body {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 0;
+}
+
+/* blog main page starts here */
+.blog{
     background-color: yellow;
 }
 
@@ -12,20 +20,39 @@
   justify-content: space-evenly;
   align-content: center;
   margin: 1em;
-  /* flex-direction: column; */
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
 }
-.bloglist li{
+.bloglist li {
   list-style: none;
+  position: relative;
+  z-index: 1
 }
+.bloglist li > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-indent:-999px;
+  z-index: 2;
+}
+.bloglist  span{
+  font-size: 10px;
+}
+
+/* blog content */
+
 .content{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   justify-content: center;
-  
   margin: 1em 2em;
   border-bottom: 5px dotted #ff4ca5;
-  padding-bottom: 30px; /* 内容と線との間隔量 */
+  padding-bottom: 30px;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
 }
 
 .content h1{
@@ -39,6 +66,14 @@
 .content img{
   margin: 1.5em auto;
 }
+.content .header{
+  background-color: white;
+  padding: 2em;
+}
+
+.content .header a{
+  float: right;
+}
 .shareicon{
   display: block;
   padding: 1em 0 0 0;
@@ -46,65 +81,6 @@
 .shareicon i{
   font-size: 1.5em;
 }
-.contact{
-    background-color: blue;
-}
-#contact{
-    box-sizing: border-box;
-  }
-  
-  #contact input[type=text], textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    /* resize: vertical; */
-  }
-  
-  #contact label {
-    /* padding: 12px 12px 12px 0; */
-    display: inline-block;
-    padding:0;
-  }
-  
-  #contact  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    /* float: right; */
-  }
-  
-  #contact input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  #contact .container {
-    border-radius: 5px;
-    background-color: orange;
-    padding: 20px;
-  }
-  
-  #contact .col-25 {
-    float: left;
-    width: 25%;
-    margin-top: 6px;
-  }
-  
-  #contact .col-75 {
-    /* float: left; */
-    width: 50%;
-    margin-top: 10px;
-  }
-  
-  /* Clear floats after the columns */
-  #contact .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 
 @media screen and (min-width: 480px) and (max-width: 1024px){

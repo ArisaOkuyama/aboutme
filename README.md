@@ -47,12 +47,12 @@ For Mobile
 <img src="docs/mobile:Ipad_blog.png" width="200">  
 
 For Ipad  
-<img src="docs/Ipad_profile.png" width="200">
-<img src="docs/Ipad_project.png" width="200">
-<img src="docs/Ipad_skill.png" width="200">  
+<img src="docs/ipad_profile.png" width="200">
+<img src="docs/ipad_project.png" width="200">
+<img src="docs/ipad_skill.png" width="200">  
 
 For Laptop  
-<img src="docs/Laptop_skill.png" width="200">
+<img src="docs/laptop_skill.png" width="200">
 <img src="docs/laptop:ipad_contact.png" width="200">
 <img src="docs/laptop.blog.png" width="200">
 <img src="docs/laptop_profile.png" width="200">

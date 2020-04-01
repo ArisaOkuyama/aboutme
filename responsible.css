@@ -88,10 +88,13 @@
         border-top: 1px dashed white;
         border-bottom: 1px dashed white;
     }
+
     #backhome ul > li:hover{
         background-color:#ff9393;
         transition:all .5s ease-in;
     }
+ 
+    
     .toggle-menu1 span{
         color: white;
         font-family: 'Raleway', sans-serif;

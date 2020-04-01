@@ -40,7 +40,7 @@ nav ul > li {
     display: none;
     padding: 10px;
     text-align: center;
-    background-color: white;
+    background-color: black;
     position: relative;
     z-index: 1;
     letter-spacing: ;
@@ -86,7 +86,7 @@ label {
 }
 .title .introduce h1{
     padding: 0;
-    color: black;
+    color: white;
     margin:0;
     text-align: center;
     font-size: 3em;
@@ -179,8 +179,14 @@ footer p{
         z-index: 1;
     }
     /* menu bar hover  */
-    #backhome ul > li:hover {
+    #backhome ul > li:hover > span {
+        border-top: 1px dashed white;
+        border-bottom: 1px dashed white;
+    }
+
+    #backhome ul > li:hover{
         background-color:#ff9393;
+        transition:all .5s ease-in;
     }
     #backhome ul > li:nth-child(1){
         padding: 0;

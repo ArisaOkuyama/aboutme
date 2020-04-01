@@ -61,6 +61,7 @@
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 9999;
     }
     .toggle-menu1 a{
         text-decoration: none;
@@ -138,7 +139,6 @@
     }
     
     .profile{
-        /* height: 100vh; */
         padding: 40px;
         display: grid;
         grid-template-areas: 
@@ -146,8 +146,7 @@
         "photo bg1 bg1 bg1"
         "photo bg1 bg1 bg1"
         "photo bg2 bg2 bg2"
-        "link bg2 bg2 bg2"
-        ;
+        "link bg2 bg2 bg2";
     }
     .aboutmetitle{
         grid-area: title;
@@ -189,6 +188,7 @@
         position: fixed;
         top: 0;
         width: 100%;
+        z-index: 9999;
     }
     
     nav ul > li {

@@ -8,6 +8,7 @@ body {
   background: linear-gradient(25deg, #F13F79, #FFC778); 
 }
 
+/* contact page heacer  */
 .formheader{
   padding : 2em;
   font-family: 'Raleway', sans-serif;
@@ -22,9 +23,9 @@ h4{
   text-align: center;
 }
 
+/* contact form section */
 .wrapper{
   box-sizing: content-box; 
-  /* height: 300x; */
   padding: 20px;
   border: 4px solid #ffe5cc;
   background: -moz-linear-gradient(120deg, #F13F79, #FFC778); 

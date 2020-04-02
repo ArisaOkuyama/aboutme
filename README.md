@@ -18,7 +18,7 @@ Top page:
 My name with little animation to start with. All social media links provided in order to contact me easily and check recent update. 
 
 Menu bar:  
-It links to 4 HTML pages. For mobile user has a hamburger menu to choose. Others has a fixed nav bar at the top of the screen and stays when scrolling and when hover, background color changes.
+It links to 4 HTML pages. For mobile user has a hamburger menu to choose. For more than 600px wide devices has a fixed nav bar at the top of the screen and stays when scrolling and when hover, background color changes.
 
 About me page, Skill & Project page,  :  
 PDF resume, a video of Ruby project are attached with responsive paragraph for each devices 
@@ -69,7 +69,4 @@ HTML
 CSS
 Font awesome
 Google font
-SRI
 Github for deployment
-
-

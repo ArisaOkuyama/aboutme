@@ -44,7 +44,7 @@ header {
     border-radius: 10%;
     border: 2px solid white;
     /* flex: 1; */
-    background: red;
+    background: white;
     margin: 1em;
 }
 .name{
@@ -82,7 +82,7 @@ header {
     align-items: center;
 }
 #skills .skilllogo{
-    background-color:#E3CFC3;
+    background-color:#c4d7d1;
     padding: 1em;
     height: 700px;
     text-align: center;

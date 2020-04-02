@@ -79,6 +79,13 @@ body {
 
 .content .header a{
   float: right;
+  color: gray;
+  text-decoration: none;
+  padding: 2px;
+}
+.content .header a:hover{
+  color: #3da8cf ;
+  font-weight: bold;
 }
 .shareicon{
   display: block;
@@ -86,6 +93,12 @@ body {
 }
 .shareicon i{
   font-size: 1.5em;
+}
+.shareicon a{
+  text-decoration: none;
+}
+.shareicon a:hover{
+  color: rgb(54, 54, 245);
 }
 
 

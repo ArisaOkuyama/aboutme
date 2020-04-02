@@ -67,7 +67,10 @@ input[type=submit] {
 input[type=submit]:hover {
 	background: #2196F3;
 }
-
+.wrapper label{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
 /* Align items to center of the 'div' with the class 'center' */
 .center {
 	text-align: center;
